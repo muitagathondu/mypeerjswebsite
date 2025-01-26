@@ -71,20 +71,22 @@ window.init = async function init(userId) {
          //  host: ipAddress,
            //host: '92.205.180.150',
           //host:'peerjs.connectmedia.co.ke',
-          host:'192.168.100.6',
+          host:'mypeerjsserver.onrender.com',
 
          // host:'themainintegration.cloudfunctions.net',
 
         // host:'us-central1-themainintegration.cloudfunctions.net/peerjs?key=peerjs&id=<userId>&token=<token>&version=1.5.4',
 
 
-     // port: 443, // HTTPS default port
-          port: 9000,
-           path: '/',
+     port: 443, // HTTPS default port
+         // port: 9000,
+          // path: '/',
+
+           path: '/peerjs',
 
           
           // path: "/myapp", // Match the path in your function
-           //secure: true ,// Use secure connections,
+           secure: true ,// Use secure connections,
 
           // debug: 3  // Enable detailed logging
 
