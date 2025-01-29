@@ -11,8 +11,8 @@ const firebaseConfig = {
     //databaseURL: "com",
     //projectId: "n",
     //storageBucket: "om",
-    //messagingSenderId: "656587088728",
-   // appId: "1:656587088728:web:22217bd95128971e5abb2d",
+    //messagingSenderId: "",
+   // appId: "",
     //measurementId: "X"
   };
  
