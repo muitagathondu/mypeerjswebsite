@@ -6,14 +6,14 @@ import{getFirestore, doc, getDoc} from "https://www.gstatic.com/firebasejs/10.11
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyAjIaiUJUz9FqlbK7i_NzJuMTve6e_Oy7U",
-    authDomain: "themainintegration.firebaseapp.com",
-    databaseURL: "https://themainintegration-default-rtdb.firebaseio.com",
-    projectId: "themainintegration",
-    storageBucket: "themainintegration.appspot.com",
-    messagingSenderId: "656587088728",
-    appId: "1:656587088728:web:22217bd95128971e5abb2d",
-    measurementId: "G-P0646TRSSX"
+   // apiKey: "",
+    //authDomain: "",
+    //databaseURL: "com",
+    //projectId: "n",
+    //storageBucket: "om",
+    //messagingSenderId: "656587088728",
+   // appId: "1:656587088728:web:22217bd95128971e5abb2d",
+    //measurementId: "X"
   };
  
  // Initialize Firebase
@@ -69,30 +69,31 @@ window.init = async function init(userId) {
 
         peer = new Peer(userId, {
          //  host: ipAddress,
-           //host: '92.205.180.150',
+           host: '192.168.100.6',
           //host:'peerjs.connectmedia.co.ke',
-          host:'mypeerjsserver.onrender.com',
+         // host:'mypeerjsserver.onrender.com',
 
          // host:'themainintegration.cloudfunctions.net',
 
         // host:'us-central1-themainintegration.cloudfunctions.net/peerjs?key=peerjs&id=<userId>&token=<token>&version=1.5.4',
 
 
-     port: 443, // HTTPS default port
-         // port: 9000,
-          // path: '/',
+    // port: 443, // HTTPS default port
+         port: 9000,
+          path: '/',
 
-           path: '/peerjs',
+           //path: '/peerjs',
 
           
           // path: "/myapp", // Match the path in your function
-           secure: true ,// Use secure connections,
+           //secure: true ,// Use secure connections,
 
           // debug: 3  // Enable detailed logging
 
         });
 
         peer.on('open', () => {
+            Android.onPeerConnected(); // Ensure this is being called
             console.log("Peer connected successfully.");
         });
 
