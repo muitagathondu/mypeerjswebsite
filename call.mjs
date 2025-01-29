@@ -59,27 +59,21 @@ window.init = async function init(userId) {
        // console.log("Initializing Peer with IP:", ipAddress);
 
         peer = new Peer(userId, {
-         //  host: ipAddress,
-         //  host: '192.168.100.6',
-          //host:'peerjs.connectmedia.co.ke',
+        
           host:'mypeerjsserver.onrender.com',
 
-         // host:'themainintegration.cloudfunctions.net',
-
-        // host:'us-central1-themainintegration.cloudfunctions.net/peerjs?key=peerjs&id=<userId>&token=<token>&version=1.5.4',
-
+        
 
      port: 443, // HTTPS default port
-       //  port: 9000,
-         // path: '/',
+      
 
            path: '/peerjs',
 
           
-          // path: "/myapp", // Match the path in your function
+       
            secure: true ,// Use secure connections,
 
-          // debug: 3  // Enable detailed logging
+        
 
         });
 
