@@ -29,7 +29,9 @@ window.init = async function init(userId) {
         
          host:'myotherpeerjs.onrender.com',
 
-         key: process.env.PEERJS_KEY,
+         //key: process.env.PEERJS_KEY,
+
+         key: 'muitawagathondu',
 
          // host:'192.168.100.6',
 
