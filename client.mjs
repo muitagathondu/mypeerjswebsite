@@ -37,9 +37,9 @@ window.init = async function init(userId) {
 
      
           
-         // port: 443, // HTTPS default port
+         port: 443, // HTTPS default port
 
-          port: 9000, // HTTPS default port
+         // port: 9000, // HTTPS default port
       
 
           // path: '/peerjs',
