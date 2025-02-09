@@ -44,7 +44,7 @@ window.init = async function init(userId) {
 
           // path: '/peerjs',
 
-           path: '/',
+           path: '/myapp',
 
           
        
