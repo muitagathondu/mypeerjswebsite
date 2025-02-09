@@ -74,3 +74,49 @@ function listen() {
     });
 }
 
+// Function to start a call
+window.startCall = function startCall(otherUserId) {
+  navigator.getUserMedia(
+      { audio: true, video: true },
+      (stream) => {
+          localVideo.srcObject = stream;
+          localStream = stream;
+
+          const call = peer.call(otherUserId, stream);
+          call.on('stream', (remoteStream) => {
+              remoteVideo.srcObject = remoteStream;
+
+              remoteVideo.className = "primary-video";
+              localVideo.className = "secondary-video";
+          });
+      }
+  );
+}
+
+// Toggle video
+function toggleVideo(b) {
+  if (b === "true") {
+      localStream.getVideoTracks()[0].enabled = true;
+  } else {
+      localStream.getVideoTracks()[0].enabled = false;
+  }
+}
+
+// Toggle audio
+function toggleAudio(b) {
+  if (b === "true") {
+      localStream.getAudioTracks()[0].enabled = true;
+  } else {
+      localStream.getAudioTracks()[0].enabled = false;
+  }
+}
+
+
+
+
+
+
+
+
+
+
