@@ -27,7 +27,7 @@ window.init = async function init(userId) {
 
         peer = new Peer(userId, {
         
-         host:'mypeerjswebsite.onrender.com',
+         host:'myotherpeerjs.onrender.com',
 
          key:'muitawagathondu',
 
