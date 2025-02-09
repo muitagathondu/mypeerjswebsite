@@ -4,7 +4,7 @@
 let peer;
 
 // Updated `init` function with only `userId` as a parameter
-window.onload.init = async function init(userId) {
+window.onload = async function init(userId) {
     try {
        // const ipAddress = await fetchIpFromFirestore(); // Fetch IP address
        // console.log("Initializing Peer with IP:", ipAddress);
