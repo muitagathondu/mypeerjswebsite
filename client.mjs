@@ -48,7 +48,7 @@ window.init = async function init(userId) {
 
           
        
-          // secure: true ,// Use secure connections,
+          secure: true ,// Use secure connections,
 
         
 
