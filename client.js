@@ -9,6 +9,10 @@ window.onload = async function init(userId) {
        // const ipAddress = await fetchIpFromFirestore(); // Fetch IP address
        // console.log("Initializing Peer with IP:", ipAddress);
 
+
+         // Initialize userId (you can set this dynamically or from query params)
+         const userId = generateUserId(); // This is an example, you can customize this logic
+
         peer = new Peer(userId, {
         
         host:'mypeerjswebsite.onrender.com',
@@ -47,4 +51,10 @@ window.onload = async function init(userId) {
     } catch (error) {
         console.error("Error initializing Peer:", error);
     }
+}
+
+// Function to generate userId (can be customized)
+function generateUserId() {
+    // Example: Generate a random userId (you can replace this with your logic)
+    return 'user_' + Math.floor(Math.random() * 1000);
 }
