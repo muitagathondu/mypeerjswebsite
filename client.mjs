@@ -61,7 +61,16 @@ window.init = async function init(userId) {
             console.log("Peer connected successfully.");
         });
 
+        peer.on('error', (err) => {
+          console.error('PeerJS error:', err); // Log the error to the console
+          // Optionally, display the error to the user:
+          alert('A PeerJS error occurred: ' + err.message); // Be careful with alerts in production
+        });
+
         listen(); // Start listening for calls
+
+
+        
     } catch (error) {
         console.error("Error initializing Peer:", error);
     }
