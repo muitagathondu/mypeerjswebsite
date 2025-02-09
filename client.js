@@ -1,4 +1,4 @@
-const peer = new Peer('my-client-id', {
+const peer = new Peer('1', {
     host: 'https://myotherpeerjs.onrender.com', // Replace with your Render service name
     port: 443,        // Use 443 for HTTPS
     path: '/myapp',
