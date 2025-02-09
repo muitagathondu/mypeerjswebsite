@@ -1,19 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PeerJS Client</title>
+<html>
+    <head>
+        <link href="./style.css" rel="stylesheet" />
 
- 
-</head>
-<body>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/1.5.4/peerjs.min.js"></script>
+        <title>Debug Firestore IP</title>
 
-  <h1>PeerJS Client</h1>
-  <p>Check the console for connection status.</p>
- 
-  <script type="module" src="client.mjs"></script>
-</body>
+
+
+
+
+    </head>
+    <body>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/1.5.4/peerjs.min.js"></script>
+
+        <div>
+            <label for="ipAddress">IP Address:</label>
+            <input type="text" id="ipAddressInput" readonly value="Loading the ip...">
+        </div>
+
+
+
+        <video class="secondary-video" autoplay id="remote-video"></video>
+        <video class="primary-video" autoplay muted id="local-video"></video>
+
+
+
+        <script type="module" src="client.mjs"></script>
+
+
+
+
+    </body>
 </html>
